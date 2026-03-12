@@ -1,9 +1,13 @@
-inventory:
-  property: "from default"
-
 ---
 spring:
   config.activate.on-profile: dev 
 
 inventory:
   property: "from dev"
+
+---
+spring:
+  config.activate.on-profile: uat 
+
+inventory:
+  property: "from uat"
