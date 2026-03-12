@@ -3,7 +3,7 @@ spring:
   config.activate.on-profile: dev 
 
 inventory:
-  property: "from dev"
+  property: "from dev-changed"
 
 ---
 spring:
