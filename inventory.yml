@@ -5,9 +5,14 @@ spring:
 inventory:
   property: "dev-changed-1234"
 
+aws:
+  secret: ${arn:aws-cn:secretsmanager:cn-north-1:522390944587:secret:mia-jv-aurora-postgres-dev-a89f58-VpCF3V}
 ---
 spring:
   config.activate.on-profile: uat 
 
 inventory:
   property: "from uat"
+
+aws:
+  secret: ${/secret/mia-jv-aurora-postgres-dev-a89f58}
