@@ -3,10 +3,8 @@ spring:
   config.activate.on-profile: dev 
 
 inventory:
-  property: "dev-changed-1234"
+  property: "from dev"
 
-aws:
-  secret: ${mia-jv-aurora-postgres-dev-a89f58}
 ---
 spring:
   config.activate.on-profile: uat 
@@ -14,5 +12,4 @@ spring:
 inventory:
   property: "from uat"
 
-aws:
-  secret: ${mia-jv-aurora-postgres-dev-a89f58}
+
