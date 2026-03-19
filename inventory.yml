@@ -5,6 +5,7 @@ spring:
 inventory:
   property: "from dev"
 
+aws.property: ${aws.secret}
 ---
 spring:
   config.activate.on-profile: uat 
@@ -13,3 +14,4 @@ inventory:
   property: "from uat"
 
 
+aws.property: ${aws.secret}
